@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <nav>
+        <div class="first">
+            <div class="menuLogo" onclick="toggleMenu()" > 
+                <img src="/assets/menu_icon.png" class="menuIcon" /> 
+            </div>
+            <div> 
+                <img src="/assets/company_logo.png" class="cmpLogo" /> 
+            </div>
+            <div> 
+                <img src="/assets/sutra_logo.png" class="suLogo" /> 
+            </div>
+        </div>
+        <div class="second">
+            <i class="fa fa-search searchIcon" style="font-size:18px"></i>
+            <input class="inputBox" type="text" placeholder="Search data, use-case, serve, documentation">
+        </div>
+        <div class="third">
+        <div> 
+            <i class="fa fa-bell bellIcon" style="font-size:20px"></i>
+        </div>
+       <div class="innerDiv">
+        <div class="userName">Jane Smith</div>
+        <div> 
+            <img src="https://png.pngtree.com/png-clipart/20210915/ourmid/pngtree-user-avatar-login-interface-abstract-blue-icon-png-image_3917504.jpg" class="profileIcon" /> 
+        </div>
+       </div>
+       </div>
+    </nav>
+    <div class="side-menu">
+        <div>
+          <div onclick="activeDiv(this)" class="rawText">Home</div>
+          <div onclick="activeDiv(this)" class="rawText">Value Analytics</div>
+
+          <!-- Projects-->
+          <div class="submenu-txt" onclick="toggleSubMenu(this)">
+            <i class="fa fa-compass" style="font-size: 18px; color: white"></i>
+            <div class="submenu" onclick="activeDiv(this)">Projects</div>
+          </div>
+ 
+          <!-- Projects Dropdown-->
+          <div class="submenu-item actDiv">
+            <div onclick="activeDiv(this)"  class="sideText">AI Private Chat</div>
+            <div onclick="activeDiv(this)"  class="sideText">Stock Job Forecast</div>
+            <div onclick="activeDiv(this)"  class="sideText">Exploratory Analytics</div>
+          </div>
+
+          <!-- Data.AI Part-->
+          <div class="submenu-txt" onclick="toggleSubMenu(this)">
+            <i class="fa fa-compass" style="font-size: 18px; color: white"></i>
+            <div class="submenu" onclick="activeDiv(this)">Data.AI</div>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="righticon">
+                <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="downicon">
+                <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>      
+          </div>
+
+          <!-- Data.AI Dropdown Part-->
+          <div class="submenu-item">
+            <div onclick="activeDiv(this)"  class="sideText">World Data</div>
+            <div onclick="activeDiv(this)"  class="sideText">Company Data</div>
+            <div onclick="activeDiv(this)"  class="sideText">Data Management</div>
+          </div>
+
+
+          <!--Operation Analytics-->
+          <div class="submenu-txt" onclick="toggleSubMenu(this)">
+            <i class="fa fa-compass" style="font-size: 18px; color: white"></i>
+            <div class="submenu" onclick="activeDiv(this)">
+              Operations Analytics
+            </div>
+          </div>
+
+          <!--Operation Analytics Dropdown-->
+          <div class="submenu-item">
+            <div onclick="activeDiv(this)"  class="sideText">Data Analytics</div>
+            <div onclick="activeDiv(this)"  class="sideText">Operational Analytics</div>
+          </div>
+
+          <!-- Admin-->
+          <div class="submenu-txt" onclick="toggleSubMenu(this)">
+            <i class="fa fa-compass" style="font-size: 18px; color: white"></i>
+            <div class="submenu" onclick="activeDiv(this)">Admin</div>
+          </div>
+
+          <!-- Admin Dropdown-->
+          <div class="submenu-item">
+            <div onclick="activeDiv(this)" class="sideText">Configuration</div>
+            <div onclick="activeDiv(this)" class="sideText">Deployments</div>
+            <div onclick="activeDiv(this)" class="sideText">Manage Users</div>
+            <div onclick="activeDiv(this)" class="sideText">Account</div>
+          </div>
+
+
+          <div onclick="activeDiv(this)" class="rawText">Company Profile</div>
+        </div>
+      </div>
+    <div class="container">
+        <div>
+            <img src="/assets/new_bg.png" class="headerBg">
+            <div class="welcomeText">
+                <p>Welcome back, Jane!</p>
+                <p class="bottomLine">here are your today's updates</p>
+            </div>
+        </div>
+    </div>
+    <div class=" parentRow">
+        <div class="emptySpace">
+        </div>
+        <div class="cardRow">
+            <div class = "singleCard">
+                <i class="fa fa-file" style="font-size:24px"></i>
+                <div class="innerCardText">
+                    <p class="title">1500</p>
+                    <p class="subtitle">Total Uploaded data</p>
+                </div>
+            </div>
+            <div class = "singleCard">
+                <i class="fa fa-file" style="font-size:24px"></i>
+                <div class="innerCardText">
+                    <p class="title">1000</p>
+                    <p class="subtitle">Total Rejected data</p>
+                </div>
+            </div>
+            <div class = "singleCard">
+                <i class="fa fa-file" style="font-size:24px"></i>
+                <div class="innerCardText">
+                    <p class="title">1200</p>
+                    <p class="subtitle">Total accepted data</p>
+                </div>
+            </div>
+            <div class = "singleCard">
+                <i class="fa fa-file" style="font-size:24px"></i>
+                <div class="innerCardText">
+                    <p class="title">500</p>
+                    <p class="subtitle">Total to-be processed</p>
+                </div>
+            </div>
+            <div class = "singleCard">
+                <i class="fa fa-file" style="font-size:24px"></i>
+                <div class="innerCardText">
+                    <p class="title">1100</p>
+                    <p class="subtitle">Total completed data</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
