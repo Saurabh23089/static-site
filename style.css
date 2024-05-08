@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    user-select: none; 
 }
 
 body {
@@ -15,6 +16,7 @@ body {
     width: 18.96px;
     height: 12.57px;
 }
+
 .cmpLogo {
     width: 170.96px;
     height: 40.57px;
@@ -32,62 +34,71 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: #3B4154;
+    border-bottom: solid 1px #888FAA;
 }
+
 .third {
     margin-top: 15px;
     display: flex;
     gap: 10px
 }
+
 .menuLogo {
-   margin-top: 12px;
+    margin-top: 12px;
 }
+
 .first {
-    margin-top:10px;
+    margin-top: 10px;
     display: flex;
     gap: 15px
 }
+
 .second {
-    height: 60px;
+    height: 58px;
     width: 400px;
     display: flex;
     gap: 10px;
     background-color: #666F8F;
 }
+
 .inputBox {
     padding: 0 210px 0 10px;
-    background: rgba(255,255,255, 0.0);
+    background: rgba(255, 255, 255, 0.0);
     border-style: none;
     color: white;
 }
+
 ::placeholder {
     color: white;
-    opacity: 1; 
-  }
-  input:focus {
+    opacity: 1;
+}
+
+input:focus {
     outline: none;
 }
 
 
 .searchIcon {
- margin-top: 20px;
- margin-left: 10px;
- color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: white;
 }
 
 .userName {
     margin-top: 5px;
     color: white;
     font-weight: 200;
-   }
+}
 
 .bellIcon {
     margin-top: 5px;
- color: white;
+    color: white;
 }
+
 .profileIcon {
     height: 30px;
     width: 30px;
-   }
+}
 
 .innerDiv {
     display: flex;
@@ -96,101 +107,132 @@ nav {
 
 .side-menu {
     position: fixed;
-    top:10;
+    top: 10;
     z-index: 1;
     left: -25%;
     width: 18%;
     height: 100%;
     background-color: #3B4154;
     transition: left 0.3s ease;
-    padding-left: 2px;
+    /* padding-left: 2px; */
+    padding-top: 24px;
     font-size: 18px;
     color: white;
-   
-  }
-  
-  .side-menu div {
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom:5em;
+}
+/* 
+.side-menu div {
     padding-top: 5px;
     padding-bottom: 5px;
-    /* padding-left: 6px; */
-  }
+    padding-left: 6px;
+} */
 
-  .rawtext {
+.rawtext {
     font-weight: 200;
     color: white;
-  }
-  
-  .submenu-item {
+}
+
+.submenu-item {
     display: none;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     font-weight: 200;
     width: 100%;
-  }
+}
 
-  .submenu-txt {
+
+
+.submenu-txt {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 5px;
     font-weight: 200;
-    
-  }
+}
 
-  .green-background {
+.submenu-op {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ch1 {
+    display: flex;
+    justify-items: center;
+    text-align: center;
+}
+
+i {
+    margin-right: 10px;
+    /* padding-bottom:2px; */
+}
+
+.green-background {
     background-color: #00B2A1;
-  }
+}
 
-  .sideText {
+.divp {
+    padding: 10px 10px;
+}
+
+.sideText {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
-  }
-   
-  .headerBg {
+    padding-left: 33px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.headerBg {
     width: 100%;
     height: 100px;
     object-fit: cover;
-  }
-  .bottomLine {
+}
+
+.bottomLine {
     margin-top: 5px;
-   font-size: 15px;
-   font-weight: 400;
-  }
-  .container {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.container {
     position: relative;
 }
 
 .welcomeText {
     position: absolute;
-    top: 40%; 
-    left: 28%; 
+    top: 40%;
+    left: 28%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white; 
-    font-size: 20px; 
-    font-weight: bold; 
-    padding: 10px; 
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
 }
 
-.parentRow{
+.parentRow {
     padding-top: 10px;
     display: flex;
     justify-content: space-between;
 }
-.cardRow{
+
+.cardRow {
     flex: 9;
     display: flex;
     justify-content: space-around;
 }
 
-.emptySpace{
+.emptySpace {
     flex: 2;
 }
 
-.singleCard{
+.singleCard {
     display: flex;
     gap: 10px;
     background-color: white;
     border-radius: 2px;
-    border: 1px ;
+    border: 1px;
     padding-left: 10px;
     padding-right: 50px;
     padding-top: 10px;
@@ -198,9 +240,9 @@ nav {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-.subtitle{
-   font-size: 10px;
-   font-weight: 400;
+.subtitle {
+    font-size: 10px;
+    font-weight: 400;
 }
 
 .righticon {
@@ -210,8 +252,8 @@ nav {
 
     /* opacity:0; */
 
-  
-    
+
+
 }
 
 .downicon {
@@ -220,11 +262,10 @@ nav {
     height: 20px;
 }
 
-.c1{
-    display:flex;
+.c1 {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:6px;
+    gap: 6px;
 }
-

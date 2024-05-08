@@ -16,14 +16,6 @@ function activeDiv(div) {
     currentActiveDiv = div;
 }
 
-function toggleSubMenu(submenu) {
-    var submenuItem = submenu.nextElementSibling;
-    submenuItem.style.display =
-        submenuItem.style.display === 'block' ? 'none' : 'block';  
-        activeDiv(submenu);   
-        toggleIcon();
-}
-
 function toggleIcon() {
     var rightIcon = document.querySelector('.righticon');
     var downIcon = document.querySelector('.downicon');
@@ -37,5 +29,23 @@ function toggleIcon() {
     }
 }
 
+function toggleSubMenu(submenu) {
+    var submenuItem = submenu.nextElementSibling;
+    var rightIcon = submenu.querySelector('.righticon');
+    var downIcon = submenu.querySelector('.downicon');
+
+    submenuItem.style.display =
+        submenuItem.style.display === 'block' ? 'none' : 'block';
+
+    if (submenuItem.style.display === 'block') {
+        rightIcon.style.display = 'none';
+        downIcon.style.display = 'inline-block';
+    } else {
+        rightIcon.style.display = 'inline-block';
+        downIcon.style.display = 'none';
+    }
+
+    activeDiv(submenu);
+}
 
 
