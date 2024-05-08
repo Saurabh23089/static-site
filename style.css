@@ -15,6 +15,7 @@ body {
 .menuIcon {
     width: 18.96px;
     height: 12.57px;
+    margin:10px;
 }
 
 .cmpLogo {
@@ -44,7 +45,9 @@ nav {
 }
 
 .menuLogo {
-    margin-top: 12px;
+    margin-top: 6px;
+    /* margin-bottom: 12px; */
+
 }
 
 .first {
